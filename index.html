@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="./css/style.css" rel="stylesheet" />
+    <title>Tag component</title>
+  </head>
+  <body>
+    <div class="main-container">
+      <div class="adding-tags-bar">
+        <label for="toggle-button" class="text">Readonly mode</label>
+        <input
+          type="checkbox"
+          id="toggle-button"
+          class="toggle-button readonly-mode-btn"
+        />
+        <input type="text" class="adding-tags-input" />
+        <button class="adding-tags-btn">Add tag</button>
+      </div>
+      <div class="tag-list-bar">
+        <button class="clear-tag-list">Clear tag list</button>
+        <button class="set-tag-list-ls">Set tag list to localStorage</button>
+        <button class="get-tag-list-ls">Get tag list from localStorage</button>
+        <label for="toggle-button" class="text">Tag list</label>
+        <input
+          type="checkbox"
+          id="toggle-button"
+          class="toggle-button toggler-tag-list"
+          checked
+        />
+      </div>
+      <div class="tags-container"></div>
+    </div>
+    <script type="module" src="./index.js"></script>
+  </body>
+</html>
